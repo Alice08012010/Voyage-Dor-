@@ -1,2 +1,23 @@
-# Voyage-Dor-
-Voyage Doré zeigt, dass besondere Reisen nicht nur an bekannten Orten wie Dubai oder den Malediven zu finden sind. Auch kleine Bergdörfer, ruhige Küsten oder versteckte Orte können einzigartig sein. Die Website soll inspirieren, neue Reiseziele zu entdecken, die oft unterschätzt werden.
+# _quarto.yml
+
+project:
+  type: website
+
+website:
+  title: "Voyage Doré"
+  
+  navbar:
+    background: dark
+    left:
+      - href: index.qmd
+        text: Home
+      - href: destinations.qmd
+        text: Destinations
+      - href: about.qmd
+        text: About
+
+format:
+  html:
+    theme: darkly
+    css: styles.css
+    toc: false
